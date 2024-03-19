@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "betterstacking",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "betterstacking",
+  "description": "This mod aims to fix the stacking of food.",
   "authors": [
-    "Turnip Labs"
+    "BD Majora"
   ],
   "contact": {
     "homepage": "",
@@ -19,20 +19,20 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"bdmajora.betterstacking.betterstacking"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"bdmajora.betterstacking.betterstacking"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"bdmajora.betterstacking.betterstacking"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"bdmajora.betterstacking.betterstacking"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+      "betterstacking.mixins.json"
   ],
 
   "depends": {

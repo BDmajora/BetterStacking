@@ -1,4 +1,4 @@
-package turniplabs.examplemod;
+package bdmajora.betterstacking;
 
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -8,17 +8,17 @@ import turniplabs.halplibe.util.GameStartEntrypoint;
 import turniplabs.halplibe.util.RecipeEntrypoint;
 
 
-public class ExampleMod implements ModInitializer, GameStartEntrypoint, RecipeEntrypoint {
-    public static final String MOD_ID = "examplemod";
-    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-    @Override
-    public void onInitialize() {
-        LOGGER.info("ExampleMod initialized.");
-    }
+public class betterstacking implements ModInitializer, GameStartEntrypoint, RecipeEntrypoint {
+	public static final String MOD_ID = "betterstacking";
+	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	@Override
+	public void onInitialize() {
+		LOGGER.info("betterstacking initialized.");
+	}
 
 	@Override
 	public void beforeGameStart() {
-
+		new foodstack().initializeItems();
 	}
 
 	@Override
